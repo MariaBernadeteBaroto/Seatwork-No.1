@@ -38,4 +38,12 @@ for row in range(7):
         if col==2 or (row==0 and col!=2):
             letter_T[row][col]="#" 
 
+#Code for letter H
+
+for row in range(7):
+    for col in range(5):
+        if col==0 or col==4 or (row==3 and (col>0 and col<4)):
+            letter_H[row][col]="#" 
+
+
 
