@@ -2,11 +2,11 @@
 
 name="ADETH"
 
-letter_A = [[" " for i in range(7)] for j in range(5)]
-letter_D = [[" " for i in range(7)] for j in range(5)]
-letter_E = [[" " for i in range(7)] for j in range(5)]
-letter_T = [[" " for i in range(7)] for j in range(5)]
-letter_H = [[" " for i in range(7)] for j in range(5)]
+letter_A = [[" " for i in range(5)] for j in range(7)]
+letter_D = [[" " for i in range(5)] for j in range(7)]
+letter_E = [[" " for i in range(5)] for j in range(7)]
+letter_T = [[" " for i in range(5)] for j in range(7)]
+letter_H = [[" " for i in range(5)] for j in range(7)]
 
 #Code for letter A
 
@@ -45,5 +45,22 @@ for row in range(7):
         if col==0 or col==4 or (row==3 and (col>0 and col<4)):
             letter_H[row][col]="#" 
 
+#Adding all the list
 
+for i in range(7):
+    for j in range(5):
+        print(letter_A[i][j], end="")
+        print(end=" ")
+    for j in range(5):
+        print(letter_D[i][j], end="")
+        print(end=" ")
+    for j in range(5):
+        print(letter_E[i][j], end="")
+        print(end=" ")
+    for j in range(5):
+        print(letter_T[i][j], end="")
+        print(end=" ")
+    for j in range(5):
+        print(letter_H[i][j], end="")
+    print()  
 
