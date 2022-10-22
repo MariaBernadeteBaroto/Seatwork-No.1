@@ -12,4 +12,6 @@ letter_H = [[" " for i in range(5)] for j in range(5)]
 
 for row in range(5):
     for col in range(9):
-        if 
+        if ((col==0 or col==4) and row!=0) or ((row==0 or row==2) and col>0 and col<4):
+            letter_A[row][col]="#"
+        
